@@ -1,0 +1,5 @@
+Dynamic-blog website plan:
+first I am going to create an index file with all my blog posts
+then I am going to use my script.js to be post data from the local storage 
+next I'm going to style my webpage and make it look nice 
+everything is going to be pushed through github and any changes will be updated
