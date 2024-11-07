@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View/Edit Post</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="pageTitle">View Blog Post</h1>
+    </header>
+    <main>
+        <div id="postContent">
+            <h2 id="postTitle"></h2>
+            <p id="postContentText"></p>
+            <img id="postImage" src="" alt="Post Image" style="max-width: 100%; border-radius: 8px; display: none;">
+        </div>
+
+        <div id="editForm" style="display: none;">
+            <form id="editPostForm">
+                <label for="editTitle">Title</label>
+                <input type="text" id="editTitle" required>
+
+                <label for="editContent">Content</label>
+                <textarea id="editContent" rows="5" required></textarea>
+
+                <label for="editImage">Image URL (optional)</label>
+                <input type="url" id="editImage">
+
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+
+        <button id="editButton">Edit Post</button>
+        <button id="saveButton" style="display: none;">Save Post</button>
+        <button id="cancelButton" style="display: none;">Cancel</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
