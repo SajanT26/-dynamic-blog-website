@@ -168,3 +168,12 @@ function switchToViewMode() {
     document.getElementById('saveButton').style.display = 'none';
     document.getElementById('cancelButton').style.display = 'none';
 }
+
+function deletePost(postId) {
+    let posts = JSON.parse(localStorage.getItem('posts')) || [];
+    posts = posts.filter(post => post.id !== postId);  
+    localStorage.setItem('posts', JSON.stringify(posts)); 
+
+    alert("Post deleted successfully!");
+    window.location.href = 'index.html';  
+}
